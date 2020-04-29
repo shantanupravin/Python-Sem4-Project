@@ -43,6 +43,7 @@ main.configure(background="black")
 # to display today's date
 ld = Label(main, text=d, bg="black", fg="white", font="none 11 italic")
 ld.place(relx=0.07, anchor = N)
+
 # to display current time
 lt = Label(main, text=t, bg="black", fg="white", font="none 11 italic")
 lt.place(relx=0.06, rely=0.03, anchor = N)
@@ -78,7 +79,7 @@ output.place(relx = 0.555, rely=0.7, anchor = N)
 main.bind('<Return>', click)
 
 
-# the periodic table dictionary, have made for around 60 elements
+# the periodic table dictionary, have made for around 64 elements
 pt_dictionary = {
     'H': 'Hydrogen \nAtomic No.: 1 \nAtomic Mass: 1u', 'He': 'Helium \nAtomic No.: 2 \nAtomic Mass: 4u',
     'Li': 'Lithium \nAtomic No.: 3 \nAtomic Mass: 7u', 'Be': 'Beryllium \nAtomic No.: 4 \nAtomic Mass: 9u',
